@@ -69,5 +69,5 @@ def test(module, testloader):
         diff = (diff != 0)
         res = diff.sum(0).item()
         rightNum += (labels.size(0) - res)
-        print('Accuracy:%d%%' % (100 * rightNum / total))
-        return rightNum / total
+    print('Accuracy:%d%%' % (100 * rightNum / total))
+    return rightNum / total
